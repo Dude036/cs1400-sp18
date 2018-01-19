@@ -18,24 +18,26 @@ Demonstration for Sections 2.1 to 2.7
 2.7 Named Constants 39
 
 """
-
+	
 # 2.2 Simple Program
-farenheit = 32
+farenheit = 18
 celcius = (farenheit - 32) * 5/9
 
 print(farenheit, "degrees Farenheit is", celcius, "degrees Celcius")
 
 
 # 2.3 Reading input from the console
-variable = int(input("Enter a degree in Farenheit: "))
+variable = float(input("Enter a degree in Farenheit: "))
 celcius = (variable - 32) * 5/9
 
-print(variable, "degrees Farenheit is", celcius, "degrees Celcius")
+print(variable, "degrees Farenheit is", round(celcius, 5), "degrees Celcius")
 
 
 # 2.5 Variables, Assignment, and Expressions
 x = 1
 do_a_thing = 5
+
+
 
 # 2.6 Simultaneous Assignment
 c = 15
