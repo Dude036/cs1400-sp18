@@ -1,9 +1,7 @@
 #!usr/bin/python
 
 '''
-Ask students if they are using Cloud 9 with Andy's class and if they want my code.
-
-
+Using GitHub for code. Check there for it.
 '''
 
 # 2.8 Numeric Data Types and Operators
@@ -16,7 +14,7 @@ print(5 + 8 * 7 - 16 / 2)
 print(8 % 92)
 print(2 ** 4)
 print(21 // 6)
-print("hue " * 10)
+print("hue " * 100)
 
 # 2.10 Augmented Assignment Operators
 j = 15
@@ -45,4 +43,16 @@ print(time.time())
 
 from datetime import datetime
 print(datetime.now().time())
+
+x = 12
+if x == 5:
+	print("Howdy")
+elif x == 12:
+	print("Hello")
+	# quit()
+else:
+	print("Hey")
+# more code here
+print("Check")
+
 
