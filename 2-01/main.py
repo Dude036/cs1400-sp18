@@ -1,12 +1,12 @@
 #!/usr/bin/python
 
 '''
-Case Studies
+Case Studies will be homework assignments from now on
 
 
 '''
 
-'''
+
 # Using Turtle - https://docs.python.org/3.3/library/turtle.html
 import turtle
 from random import randrange
@@ -35,8 +35,10 @@ hour = currentTime.hour
 
 print(hour%12, ':', currentTime.minute, ':', currentTime.second)
 
-
+'''
 """
 	Case Study
-
+	- Compute the Distance between two points.with Turtle
 """
+
+
