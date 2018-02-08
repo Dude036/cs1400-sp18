@@ -6,7 +6,15 @@ Feb 16 - Exam 1
 
 Review Next week to cover everything. Bring questions
 '''
+# String concatination
+first = "Josh"
+last = "Higham"
 
+print(first + last)
+print(first, last)
+# print("$" + 5.00)
+
+'''
 # Boolean Values and how to get them
 
 a = True
@@ -14,7 +22,7 @@ print(a)
 
 b = 6 >= 10
 print(b)
-'''
+
 # Control Block Points
 if a:
 	print("A is True")
