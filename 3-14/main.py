@@ -6,7 +6,7 @@
 def add(a, b):
 	return a+b
 
-# Recurseive Factorial Function
+# Recursive Factorial Function
 def factorial(n):
     if n <= 0:
         return 1
@@ -31,7 +31,7 @@ print(calc_e(15))
 def print_thing(thing="thing"):
 	print(thing)
 
-print_thing()
+print_thing('That')
 
 '''
 Case Study:
@@ -47,11 +47,29 @@ j o  s  h u  a
 My opinion of the optimal number of functions to accomplish this goal: 3
 '''
 
+def get_name_score(name):
+	score = 0
+	for letter in name:
+		score += ord(letter) % 97
+	return score
+
+def highest_name(names):
+	bestFriend = ''
+	bestScore = 0
+
+	for name in names:
+		score = get_name_score(name)
+		if score > bestScore:
+			bestFriend = name
+			bestScore = score
+
 def favorite_friends():
 	names = ['joshua', 'michael', 'patrick', 'carly', 'brady', 'ethan', 'lexi', 'sage', 'cale', 'ryan', 'josephina', 'dabrazilia']
 	for x in range(6):
 		bestFriend = ''
 		bestScore = 0
+		# highest_name(names)
+		# ______________________
 		for name in names:
 			score = 0
 			for letter in name:
@@ -59,9 +77,10 @@ def favorite_friends():
 			if score > bestScore:
 				bestFriend = name
 				bestScore = score
+		
 		print("My number", x+1, "pick for a best friend is:", bestFriend, "because they had the highest friend score of", bestScore)
 		names.remove(bestFriend)
 		bestScore = 0
 
 
-
+favorite_friends()
