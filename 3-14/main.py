@@ -25,10 +25,13 @@ def calc_e(n):
 		total = add(total, 1/factorial(x))
 	return total
 
+print(calc_e(15))
+
 # Default arguments
 def print_thing(thing="thing"):
 	print(thing)
 
+print_thing()
 
 '''
 Case Study:
@@ -62,4 +65,3 @@ def favorite_friends():
 
 
 
-favorite_friends()
